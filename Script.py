@@ -11,7 +11,7 @@ def is_enabled(value, default):
         return default
 
 class script(object):
-    HOME_BUTTONURL_UPDATES = environ.get("HOME_BUTTONURL_UPDATES", 'https://clicksfly.com/ref/GreyMatter658')
+    HOME_BUTTONURL_UPDATES = environ.get("HOME_BUTTONURL_UPDATES", '')
     START_TXT = environ.get("START_TXT", '''<b>𝐇𝐢 {}
 😎 𝐈'𝐦 ℕ𝔼𝕋𝕃𝕐ℍ𝕌𝔹_𝔹𝕆𝕋
 👌 𝐈 𝐂𝐚𝐧 𝐒𝐞𝐚𝐫𝐜𝐡 𝐌𝐨𝐯𝐢𝐞𝐬 𝐅𝐨𝐫 𝐘𝐨𝐮
@@ -49,9 +49,6 @@ class script(object):
 1. Telegram will not allows you to send buttons without any content, so content is mandatory.
 2. Search Bot supports buttons with any telegram media type.
 3. Buttons should be properly parsed as markdown format
-
-<b>URL buttons:</b>
-<code>[Button Text](buttonurl:https://t.me/GreyMatter_Owner)</code>
 
 <b>Alert buttons:</b>
 <code>[Button Text](buttonalert:This is an alert message)</code>"""
